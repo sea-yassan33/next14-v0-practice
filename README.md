@@ -49,14 +49,16 @@ https://v0.dev/
 
 2．V0が以下のプログラムを作成してくれるのでそれをコピペするだけ。
 - ※プログラムをコピペする前に追加ライブラリを追加しとく※
-```txt
-- app/_components/AnimatedSection/index.tsx
-- app/_components/AnimatedTitle/index.tsx
-- app/page.tsx
-```
+- プロンプトで投げた問いからプログラムを作成してくれます。（今回は３つ作成してくれました）
+- 以下の様に適切な場所にコピペする。
+  - [app/_components/AnimatedSection/index.tsx](https://github.com/sea-yassan33/next14-v0-practice/blob/main/app/_components/AnimatedSection/index.tsx)
+  - [app/_components/AnimatedTitle/index.tsx](https://github.com/sea-yassan33/next14-v0-practice/blob/main/app/_components/AnimatedTitle/index.tsx)
+  - [app/page.tsx](https://github.com/sea-yassan33/next14-v0-practice/blob/main/app/page.tsx)
 
 ３．完成
 - [サンプル例](https://next14-v0-practice.vercel.app/)
+
+※V0は基本React・Next.js・tailwindをベースにプログラムが作成されます。
 
 ### 参考
 - [Next.jsの開発まとめ集](https://qiita.com/sea_news_yass/items/6d09c5a70e7356406f4d)
