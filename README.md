@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 開発環境
+```sh
+npx create-next-app@14.1.4
+Ok to proceed? (y) y
+✔ What is your project named? … [プロジェクト名]
+✔ Would you like to use TypeScript? …  / Yes
+✔ Would you like to use ESLint? …  / Yes
+✔ Would you like to use Tailwind CSS? …  / YES
+✔ Would you like to use `src/` directory? … No / 
+✔ Would you like to use App Router? (recommended) …  / Yes
+✔ Would you like to customize the default import alias (@/*)? … No / 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 追加ライブラリ
+```sh
+## Tailwind Variants
+npm install tailwind-variants
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ui.shadcn
+npx shadcn@latest init -d
+npx shadcn@latest add button
+npx shadcn@latest add card 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ブラウザ依存のライブラリ
+npm install framer-motion
 
-## Learn More
+## Headless UI
+npm install @headlessui/react
 
-To learn more about Next.js, take a look at the following resources:
+## Heroicons
+npm install @heroicons/react
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## V0について
+https://v0.dev/
 
-## Deploy on Vercel
+[【Qiita】Vercel v0解説: テキストから始まるAI駆動型UI開発](https://qiita.com/shirochan/items/541126f4c866367b2278)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[【you tube】たった数秒で高品質なUIが作れるAIサービスを紹介します](https://www.youtube.com/watch?app=desktop&v=ctmCLOTpWew)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### V0を使ってホーム画面を作成手順
+
+１．V0のユーザー登録後、以下のプロンプトを投げる
+```txt
+コーポレートサイトのホーム画面をポップな感じで作成してください。
+```
+
+2．V0が以下のプログラムを作成してくれるのでそれをコピペするだけ。
+- ※プログラムをコピペする前に追加ライブラリを追加しとく※
+```txt
+- app/_components/AnimatedSection/index.tsx
+- app/_components/AnimatedTitle/index.tsx
+- app/page.tsx
+```
+
+３．完成
+
+### 参考
+- [Next.jsの開発まとめ集](https://qiita.com/sea_news_yass/items/6d09c5a70e7356406f4d)
